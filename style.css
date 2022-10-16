@@ -1,0 +1,143 @@
+body {
+    overflow: hidden;
+    background-image: linear-gradient(45deg, rgb(128, 144, 224) 0%, rgb(193, 112, 187) 50%, hwb(39 47% 15%) 100%);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 600px;
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(19, 18, 18, 0.5);
+    border-radius: 10px;
+}
+
+.item   {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    background-size: cover;
+    transition: 0.5s;
+}
+
+.item:nth-child(1),
+.item:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+
+}
+
+.item:nth-child(3) {
+    left: 50%;
+}
+
+.item:nth-child(4) {
+    left: calc(50% + 220px);
+}
+
+.item:nth-child(5) {
+    left: calc(50% + 440px);
+}
+
+.item:nth-child(n + 6) {
+    left: calc(50% + 660px);
+    opacity: 0;
+}
+
+.item .content {
+    position: absolute;
+    top: 40%;
+    left: 50px;
+    display: none;
+    width: 300px;
+    text-align: center;
+}
+
+.item:nth-child(2) .content {
+    display: block;
+}
+
+.item:nth-child(2) .name {
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    animation: showContent 1s forwards;
+}
+
+.item:nth-child(2) .des {
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 20px;
+    animation: showContent 1.3s forwards;
+
+}
+
+.item:nth-child(2) button {
+    position: absolute;
+    font-size: 16px;
+    border: none;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    left: 0;
+    animation: showContent 1.8s forwards;
+}
+
+.item:nth-child(2) button:hover {
+    background-color: rgba(226, 222, 222, 0.8);
+}
+
+@keyframes showContent {
+    from {
+        opacity: 0;
+        transform: translateY(200px);
+        filter: blur(10px);
+    }to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+.buttons {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    text-align: center;
+
+}
+
+.buttons button {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgba(19, 18, 18, 0.5);
+}
+
+.buttons button:hover {
+    background-color: rgba(22, 21, 21, 0.6);
+}
+
+
+
+
+
+
