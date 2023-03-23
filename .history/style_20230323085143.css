@@ -10,7 +10,7 @@ body {
     transform: translate(-50%, -50%);
     width: 1000px;
     height: 600px;
-    box-shadow:0 10px 20px rgba(19, 18, 18, 0.5);
+    box-shadow: 0 10px 20px rgba(19, 18, 18, 0.5);
     border-radius: 10px;
 }
 
@@ -25,7 +25,7 @@ body {
     background-size: cover;
     transition: 0.5s;
 }
-
+/* 
 .item:nth-child(1), 
 .item:nth-child(2) { 
     position: absolute;
@@ -94,7 +94,7 @@ body {
     cursor: pointer;
     left: 0;
     animation: showContent 1.8s forwards;
-}
+} */
 
 .item:nth-child(2) button:hover {
     background-color: rgba(226, 222, 222, 0.8);

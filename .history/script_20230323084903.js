@@ -15,4 +15,3 @@ document.getElementById('right').onclick = function() {
 }
 
 
-

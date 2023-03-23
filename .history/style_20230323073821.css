@@ -10,7 +10,7 @@ body {
     transform: translate(-50%, -50%);
     width: 1000px;
     height: 600px;
-    box-shadow:0 10px 20px rgba(19, 18, 18, 0.5);
+    box-shadow: 0 10px 20px rgba(19, 18, 18, 0.5);
     border-radius: 10px;
 }
 
@@ -26,8 +26,8 @@ body {
     transition: 0.5s;
 }
 
-.item:nth-child(1), 
-.item:nth-child(2) { 
+.item:nth-child(1),
+.item:nth-child(2) {
     position: absolute;
     top: 0;
     left: 0;
@@ -38,11 +38,11 @@ body {
 }
 
 .item:nth-child(3) {
-    left: 50%;
+    /* left: 50%; */
 }
 
 .item:nth-child(4) {
-    left: calc(50% + 220px);
+    /* left: calc(50% + 220px); */
 }
 
 .item:nth-child(5) {

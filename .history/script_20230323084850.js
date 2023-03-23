@@ -10,9 +10,8 @@ document.getElementById('left').onclick = function() {
 document.getElementById('right').onclick = function() {
     // lập 1 list item
     let lists = document.querySelectorAll('.item');
-    // lấy phần tử cuối đầy về đầu danh sách
+    // lấy phần tử đầu đầy về cuối danh sách
     document.getElementById('slider').prepend(lists[lists.length - 1]);
 }
-
 
 

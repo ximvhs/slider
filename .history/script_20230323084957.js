@@ -14,5 +14,8 @@ document.getElementById('right').onclick = function() {
     document.getElementById('slider').prepend(lists[lists.length - 1]);
 }
 
+ducument.getElementById('right').onclick = function(){
+    let lists = document.querySelectorAll()
+}
 
 
